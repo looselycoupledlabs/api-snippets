@@ -45,7 +45,7 @@ public class ErrorModel {
         {
             throw new ParsingFileException(String.format("Error while reading file '%s': %s", errFile.getName(), ex.getMessage()));
         }
-        //Parseando contenido
+        //Parsing content
         Pair<String, String> split = Utils.extractFirstLineFromString(content);
         m = TITLE_PATTERN.matcher(split.getKey());
         Integer errNumberFound = null;

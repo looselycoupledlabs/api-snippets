@@ -41,3 +41,8 @@ output/
 .env
 vendor/
 nuget/
+
+#IDE files in tools
+tools/**/target
+tools/**/.idea
+tools/**/*.iml

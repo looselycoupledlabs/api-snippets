@@ -43,7 +43,7 @@ public class Utils {
 
     public static final String formatMarkdownContent(String content)
     {
-        return content.trim();
+        return content.trim().replaceAll("\t", "  ");
     }
 
     public static String removeMarkdown(String key)
