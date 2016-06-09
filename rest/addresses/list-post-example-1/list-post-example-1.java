@@ -26,7 +26,7 @@ public class Example {
     params.add(new BasicNameValuePair("PostalCode", "10875"));
     params.add(new BasicNameValuePair("IsoCountry", "DE"));
     AddressFactory factory = client().getAccount().getAddressFactory();
-    Address address = factory.create(params):
+    Address address = factory.create(params);
     System.out.println(address.getSid());
   }
 }
